@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "442434453714",
+    "project_id": "latihan-88086",
+    "storage_bucket": "latihan-88086.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442434453714:android:95915d2f602c41a4a66d0b",
+        "android_client_info": {
+          "package_name": "binar.academy.chapter7topic2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442434453714-qkduqlats17saq2ddknq41hrd23uasho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "binar.academy.chapter7topic2",
+            "certificate_hash": "82975f48135f0a440bb55f3413aa0349d3934259"
+          }
+        },
+        {
+          "client_id": "442434453714-s21f3ljkdmtlme5jn355hb5b2c7jba39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzLCiwPeljcz47bg6rDrs_4vmRI3C02b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442434453714-s21f3ljkdmtlme5jn355hb5b2c7jba39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

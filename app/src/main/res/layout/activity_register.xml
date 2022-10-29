@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,91 +8,100 @@
     android:padding="20dp"
     tools:context=".RegisterActivity">
 
-    <TextView
-        android:id="@+id/registerHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="We Are Valorant"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="44sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/registerEmail"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/bg_txt_field"
-        android:ems="10"
-        android:hint="\t\tEmail"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerHeader" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/registerPassword"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_txt_field"
-        android:ems="10"
-        android:hint="\t\tPassword"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+        <TextView
+            android:id="@+id/registerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="We Are Valorant"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/registerConfirm"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_txt_field"
-        android:ems="10"
-        android:hint="\t\tConfirm Password"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_txt_field"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerHeader" />
 
-    <TextView
-        android:id="@+id/registerSubHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Sign In"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/registerConfirm"
-        app:layout_constraintTop_toBottomOf="@+id/registerConfirm" />
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_txt_field"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
 
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="180dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/bg_button"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Sign Up"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/registerConfirm"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/registerSubHeader"
-        app:layout_constraintTop_toBottomOf="@+id/registerConfirm" />
+        <EditText
+            android:id="@+id/registerConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_txt_field"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/registerSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign In"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/registerConfirm"
+            app:layout_constraintTop_toBottomOf="@+id/registerConfirm" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/registerConfirm"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/registerSubHeader"
+            app:layout_constraintTop_toBottomOf="@+id/registerConfirm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
